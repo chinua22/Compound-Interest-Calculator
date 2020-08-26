@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <header>
+    <nav><h1>Interest Rate</h1></nav>
+  </header>
+  <section class="wrapper">
+    <form>
+      <label>Principal:</label>
+      <input type="text" id="principal">
+      <label>Rate:</label>
+      <input type="text" id="rate">
+      <label>Time:</label>
+      <input type="text" id="time">
+      </form>
+      <button id="generate">Generate</button>
+      <div class="output">
+        <h2>Interest</h2>
+        <p>Interest Earned = <span id="output1"></span></p>
+        <p>Investment After One Year= <span id="output2"></span></p>
+      </div>
+  </section>
+
+  <!-- COMPOUND INTEREST -->
+  <section class="container">
+    <div class="main-form">
+        <h1 class="masthead"> SIMPLE INTEREST CALCULATOR</h1>
+    <form action="#">
+        <p class="principal"> Principal&#40;P&#41;: &#36;
+            <label>
+                <input type="number" min="0" class="principal" placeholder="Actual investment capital">
+            </label>
+        </p>
+        <p class="rate"> Rate&#40;R&#41;: &#37;
+            <label>
+                <input type="number" min="0" class="rate" placeholder="The interest rate">
+            </label>
+        </p>
+        <p class="time"> Time&#40;t&#41;:
+            <label>
+                <input type="number" min="0" class="time" placeholder="Number of accrued days">
+            </label>
+        </p>
+        <p>
+            <button type="button" onclick="resultAccrued()" id="btn">Calculate</button>
+        </p>
+        <p class="result"></p>
+    </form>
+    </div>
+    </section>
+  <footer>
+    <p>&copy Copyright 2020</p>
+  </footer>
+</body>
+</html>
